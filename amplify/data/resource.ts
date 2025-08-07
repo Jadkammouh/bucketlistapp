@@ -7,6 +7,7 @@ const schema = a.schema({
       title: a.string(),
       description: a.string(),
       image: a.string(),
+      
     })
     .authorization((allow) => [allow.owner()]),  // Restrict access to the owner
 });
